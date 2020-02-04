@@ -54,7 +54,7 @@ Table of Contents
 |      |         |                     |           |
 
 ## 1. Introduction
-> This section should provide an overview of the entire document
+<!-- This section should provide an overview of the entire document-->
 
 ### 1.1 Document Purpose
 <!-- Describe the purpose of the SRS and its intended audience. -->
@@ -101,9 +101,9 @@ The purpose of this Software Requirements Specification is to build a health app
 Identify requirements that may be delayed until future versions of the system (e.g., blocks and/or increments).-->
 
 ## 3. Requirements
-<!-->> This section specifies the software product's requirements. Specify all of the software requirements to a level of detail sufficient to enable designers to design a software system to satisfy those requirements, and to enable testers to test that the software system satisfies those requirements.
+<!-- This section specifies the software product's requirements. Specify all of the software requirements to a level of detail sufficient to enable designers to design a software system to satisfy those requirements, and to enable testers to test that the software system satisfies those requirements.
 
-> The specific requirements should:
+ The specific requirements should:
 * Be uniquely identifiable.
 * State the subject of the requirement (e.g., system, software, etc.) and what shall be done.
 * Optionally state the conditions and constraints, if any.
@@ -112,7 +112,7 @@ Identify requirements that may be delayed until future versions of the system (e
 * Conform to agreed upon syntax, keywords, and terms.-->
 
 ### 3.1 External Interfaces
-<!-->> This subsection defines all the inputs into and outputs requirements of the software system. Each interface defined may include the following content:
+<!-- This subsection defines all the inputs into and outputs requirements of the software system. Each interface defined may include the following content:
 * Name of item
 * Source of input or destination of output
 * Valid range, accuracy, and/or tolerance
