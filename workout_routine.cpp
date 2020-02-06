@@ -9,7 +9,9 @@ class workout_routine
     private:
         int volume; //BULK == 2, CUT == 1, MAINTAIN == 1
         string volume_1;
+        int user_weight;
     public:
+        void input_weight();
         void bulk_cut_maintain();
         int get_volume();
         void bulk_push();
@@ -24,6 +26,11 @@ class workout_routine
         void cardio();
 
 };
+void input_weight()
+{
+    cout << "Sorry for asking but may I know how much do you weigh in pounds?\n";
+    cin >> user_weight;
+}
 int workout_routine::get_volume()
 {
     return volume;
@@ -63,40 +70,46 @@ void workout_routine::bulk_cut_maintain()
 }
 void workout_routine::bulk_push()
 {
-    //struct
+    cout << "Bulk Push\n";
 }
 void workout_routine::bulk_pull()
 {
-
+    cout << "Bulk Push\n";
 }
 void workout_routine::bulk_legs()
 {
-
+    cout << "Bulk Push\n";
 }
 void workout_routine::cut_push()
 {
+    cout << "Bulk Push\n";
 
 }
 void workout_routine::cut_pull()
 {
+    cout << "Bulk Push\n";
 
 }
 void workout_routine::cut_legs()
 {
+    cout << "Bulk Push\n";
 
 }
 void workout_routine::maintain_push()
 {
+    cout << "Bulk Push\n";
 
 }
 void workout_routine::maintain_pull()
 {
+    cout << "Bulk Push\n";
 
 }
 void workout_routine::maintain_legs()
 {
-
+    cout << "Bulk Push\n";
 }
+
 void workout_routine::cardio()
 {
 
@@ -106,7 +119,8 @@ int main()
 {
     int choice;
     workout_routine daily;
-    cout << "***Welcome to your daily Workout Routine***";
+    cout << "***Welcome to your daily Workout Routine***\n";
+    daily.input_weight();
     while(true)
     {
         cout << "What workout routine did you have in mind today?";
@@ -122,15 +136,15 @@ int main()
                 daily.bulk_cut_maintain();
                 if (daily.get_volume() == 2)
                 {
-                    /* code */
+                    daily.bulk_push();
                 }
                 else if (daily.get_volume() == 1)
                 {
-                    /* code */
+                    daily.cut_push();
                 }
                 else if (daily.get_volume() == 0)
                 {
-                    /* code */
+                    daily.maintain_push();
                 }
                 else
                 {
@@ -142,15 +156,15 @@ int main()
                 daily.bulk_cut_maintain();
                 if (daily.get_volume() == 2)
                 {
-                    /* code */
+                    daily.bulk_pull();
                 }
                 else if (daily.get_volume() == 1)
                 {
-                    /* code */
+                    daily.cut_pull();
                 }
                 else if (daily.get_volume() == 0)
                 {
-                    /* code */
+                    daily.maintain_pull();
                 }
                 else
                 {
@@ -161,15 +175,15 @@ int main()
                 daily.bulk_cut_maintain();
                 if (daily.get_volume() == 2)
                 {
-                    /* code */
+                    daily.bulk_legs();
                 }
                 else if (daily.get_volume() == 1)
                 {
-                    /* code */
+                    daily.cut_legs();
                 }
                 else if (daily.get_volume() == 0)
                 {
-                    /* code */
+                    daily.maintain_legs();
                 }
                 else
                 {
