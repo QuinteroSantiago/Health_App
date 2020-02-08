@@ -1,6 +1,6 @@
 # Software Requirements Specification
 ## For Health App
-
+### This is a work in progress document, it will be updated as the application's scope becomes clear.
 Version 1.1
 Prepared by Santiago Quintero  
 A1  
@@ -62,6 +62,10 @@ The purpose of this Software Requirements Specification is to build a health app
 
 ### 1.2 Product Scope
 <!--Identify the product whose software requirements are specified in this document, including the revision or release number. Explain what the product that is covered by this SRS will do, particularly if this SRS describes only part of the system or a single subsystem. Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies. If a separate vision and scope document is available, refer to it rather than duplicating its contents here.-->
+Version 2.0 will be the Minimum Viable Product that passes all unit tests for the workout_routine function.
+Version 3.0 will be the Minimum Viable Product that passes all unit tests for the diet_provider function.
+Version 4.0 will be fully implemented application with a QT Graphical User Interface
+Version 4.0 will be the release on the World Wide Web as a Web Browser based application. The technologies and frameworks used in this version are still to be determined
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 <!--In Progress-->
@@ -74,6 +78,8 @@ The purpose of this Software Requirements Specification is to build a health app
 
 ## 2. Product Overview
 <!--This section should describe the general factors that affect the product and its requirements. This section does not state specific requirements. Instead, it provides a background for those requirements, which are defined in detail in Section 3, and makes them easier to understand.-->
+This application's main goal is to have two main functions. The first function will be a workout routine provider that will input what the user wants to do with their workout, either bulk, cut or maintain their muscles. The other function will provide a diet for the user based on their weight, activity, and their needs to lose or gain weight.
+
 
 ### 2.1 Product Perspective
 <!--Describe the context and origin of the product being specified in this SRS. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the SRS defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful.-->
