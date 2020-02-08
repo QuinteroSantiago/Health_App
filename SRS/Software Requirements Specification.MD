@@ -48,8 +48,8 @@ Table of Contents
 
 ## Revision History
 | Name | Date    | Reason For Changes  | Version   |
-| Init | 02/04/20| Initialization      | 1.1       |
-|      |         |                     |           |
+| ---- | ------- | ------------------- | --------- |
+| Init | 2.4.20  | Initialization      | 1.1       |
 |      |         |                     |           |
 |      |         |                     |           |
 
@@ -143,10 +143,10 @@ Could be further divided into Usability and Convenience requirements.-->
 <!--Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Refer to documents that describe detailed application programming interface protocols. Identify data that will be shared across software components. If the data sharing mechanism must be implemented in a specific way (for example, use of a global data area in a multitasking operating system), specify this as an implementation constraint.-->
 
 ### 3.2 Functional
-<!-->> This section specifies the requirements of functional effects that the software-to-be is to have on its environment.-->
+<!-- This section specifies the requirements of functional effects that the software-to-be is to have on its environment.-->
 
 ### 3.3 Quality of Service
-<!-->> This section states additional, quality-related property requirements that the functional effects of the software should present.-->
+<!-- This section states additional, quality-related property requirements that the functional effects of the software should present.-->
 
 #### 3.3.1 Performance
 <!--If there are performance requirements for the product under various circumstances, state them here and explain their rationale, to help the developers understand the intent and make suitable design choices. Specify the timing relationships for real time systems. Make such requirements as specific as possible. You may need to state performance requirements for individual functional requirements or features.-->
