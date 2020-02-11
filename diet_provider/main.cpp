@@ -1,8 +1,22 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
+#include <sstream>
+#include <vector>
 #include <cstdlib>
 using namespace std;
+
+struct recipe //This might go inside main or diet_data depending on input file location
+{
+    string recipe_name;
+    int calories;
+    int fat;
+    int protein;
+    int sugar;
+    int time_of_meal;// 0 = Bfast, 1 = Lunch, 2 = Dinner
+    string ingredients;
+};
+
 
 class diet_data
 {
@@ -60,8 +74,26 @@ void diet_data::all_find()
 int main()
 {
     int choice;
-    diet_data D;
+    diet_data D; //Declaring diet_data class
     cout << "***Welcome to Diet Provider***";
+    /* IN PROGRESS READING IN recipes.csv file
+    fstream recipes_file;
+    recipes_file.open(recipes.csv, ios::in);
+    
+    vector<string> row;
+    string recipe_name, calories, fat, protein, sugar, time_of_meal, ingredients;
+    string line, word, temp; 
+  
+    while (fin >> temp) { 
+        row.clear();   
+        getline(fin, line); 
+        stringstream s(line); 
+        while (getline(s, word, ', ')) { 
+            row.push_back(word); 
+        } 
+
+    //NEED FOR INPUTTING VARIABLES INTO STRUCT
+    */
     while(true)
     {
         cout << "Select from one of the options below: ";
