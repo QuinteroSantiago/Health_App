@@ -6,15 +6,15 @@
 #include <cstdlib>
 using namespace std;
 
-struct recipe //This might go inside main or diet_data depending on input file location
+struct Recipe //This might go inside main or diet_data depending on input file location
 {
-    string recipe_name;
+    string *recipe_name;
     int calories;
-    int fat;
     int protein;
-    int sugar;
-    int time_of_meal;// 0 = Bfast, 1 = Lunch, 2 = Dinner
-    string ingredients;
+    int fat;
+    vector<int> macros{calories,protein,fat};
+    int *time_of_meal;// 0 = Bfast, 1 = Lunch, 2 = Dinner
+    string *ingredients;
 };
 
 
@@ -80,10 +80,11 @@ int main()
     fstream recipes_file;
     recipes_file.open(recipes.csv, ios::in);
     
+    Recipe *recipe = new Recipe;
+
     vector<string> row;
-    string recipe_name, calories, fat, protein, sugar, time_of_meal, ingredients;
     string line, word, temp; 
-  
+
     while (fin >> temp) { 
         row.clear();   
         getline(fin, line); 
@@ -91,7 +92,15 @@ int main()
         while (getline(s, word, ', ')) { 
             row.push_back(word); 
         } 
+    data.recipe_name;
 
+    data.calories;
+    data.fat;
+    data.protein;
+
+    data.sugar;
+    data.time_of_meal;
+    data.ingredients;
     //NEED FOR INPUTTING VARIABLES INTO STRUCT
     */
     while(true)
