@@ -2,90 +2,10 @@
 #include <fstream>
 #include <sstream>
 #include <cstdlib>
+#include <iomanip>
+#include <vector>
 using namespace std;
 
-class user_data{
-    private:
-        char gender;
-        int weight;
-        int height;
-        int age;
-        int calories;
-        int protein_grams;
-    public:
-        void data();
-        void diet();
-        int get_calories();
-        int get_protein();
-};
-
-void user_data::data()
-{
-    cout << "***Diet Provider Main Function***";
-    cout << "Are you a male of a female(M/F): ";
-    cin >> gender;
-    cout << "How much do you weight (kg): ";
-    cin >> weight;
-    cout << "How tall are you? (cm): ";
-    cin >> height;
-    cout << "How old are you? (years): ";
-    cin >> age;
-}
-void user_data::diet()
-{
-    int basal_metabolic_rate;
-    int activity_factor = 120; // Variable in future. This is for a sedentary lifestyle. 120 = 1.2
-    if (gender == 'M' || gender == 'm') // Basal Metabolic Rate if user is a male
-    {
-        basal_metabolic_rate = (weight * 10) + (height * 6.25) - (age * 5) + 5; //Mifflin-St Jeor Equation
-    }
-    else if(gender == 'F' || gender == 'f') // Basal Metabolic Rate if user is a female
-    {
-        basal_metabolic_rate = (weight * 10) + (height * 6.25) - (age * 5) - 161; //Mifflin-St Jeor Equation
-    }
-    
-    else // Average of Male and Females if person identifies as non-binary
-    {
-        basal_metabolic_rate = (weight * 10) + (height * 6.25) - (age * 5) - 78; // Non-scientifically sound equation
-    }
-    calories = (activity_factor * basal_metabolic_rate) / 100;
-    protein_grams = (calories * .15) / 4;
-}
-int user_data::get_calories()
-{
-    return calories;
-}
-int user_data::get_protein()
-{
-    return protein_grams;
-}
-
-
-struct ideal_diet{
-    int calories;
-    int protein_grams;
-};
-
-int main()
-{
-    //Reads in CSV file line by line. 3
-    //Creates lists of diets based on vector above. 4
-    //Ask for years and weight of user.
-    user_data user;
-    user.data();
-    //Creates ideal diet given the previous input. 2
-    user.diet();
-    struct ideal_diet user_diet;
-    /*Test*/cout << user.get_calories() << " Calories.\n" << user.get_protein() << " protein grams.\n"; 
-
-    user_diet.calories = user.get_calories();
-    user_diet.protein_grams = user.get_protein();
-    //Linear Search for diet that best correlates to .5
-    system("pause");
-    return 0;
-}
-
-/*
 struct Recipe //This might go inside main or diet_data depending on input file location
 {
     string *recipe_name;
@@ -185,7 +105,6 @@ int main()
     
     while(true)
     {
-    // IN CONSTRUCTION   
         cout << "Select from one of the options below: ";
         cout << "\n\t1-->Find a diet based on Calories";
         cout << "\n\t2-->Find a diet based on Protein";
@@ -222,4 +141,3 @@ int main()
     system("pause");
     return 0;
 }
-*/

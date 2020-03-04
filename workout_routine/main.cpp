@@ -201,3 +201,13 @@ int main()
 //caloriesMan = ( (ageYears * 0.2017) - (weightPounds * 0.09036) + (heartBPM * 0.6309) - 55.0969 ) * timeSeconds / 4.184
 //caloriesWoman = ( (ageYears * 0.074) - (weightPounds * 0.05741) + (heartBPM * 0.4472) - 20.4022 )* timeSeconds / 4.184
 }
+
+
+void workout_routine::write_log()
+{
+    ofstream outfile;
+    outfile.open("workout.routine", ios::binary|ios::app);
+    read_data();
+    outfile.write(reinterpret_cast<char *>(this), sizeof(*this));
+    outfile.close();
+}

@@ -72,6 +72,11 @@ Version 4.0 will be the release on the World Wide Web as a Web Browser based app
 
 ### 1.4 References
 <!--List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.-->
+https://www.geeksforgeeks.org/constructors-c/
+
+https://www.calculator.net/calorie-calculator.html?ctype=metric&cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=165&cheightmeter=180&ckg=65&cactivity=1.465&cmop=0&coutunit=c&cformula=m&cfatpct=20&printit=0
+
+
 
 ### 1.5 Document Overview
 <!--Describe what the rest of the document contains and how it is organized.-->
