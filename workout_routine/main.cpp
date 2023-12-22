@@ -24,9 +24,9 @@ class workout_routine
         void maintain_pull();
         void maintain_legs();
         void cardio();
-
+        void write_log();
 };
-void input_weight()
+void workout_routine::input_weight()
 {
     cout << "Sorry for asking but may I know how much do you weigh in pounds?\n";
     cin >> user_weight;
